@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+
+}
+.asdf{
+    height: 120vh;
+}
+header{
+    background-color: whitesmoke;
+    justify-content: center;
+    display: flex;
+}
+.contact-img1 , .contact-img2{
+    width:40px;
+}
+.twitter{
+    width: 35px;
+}
+.header-contact{
+    width:85%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-contact-content1{
+    display:flex;
+}
+.contact1 , .contact2{
+    display:flex;
+    align-items: center;
+}
+.title{
+    font-weight: 900;
+    font-size:40px;
+    color:#2b4258;
+}
+.nav-title{
+    width:85%;
+    display:flex;
+    align-items: center;
+    margin:20px 0px;
+    align-self: center;
+} 
+.nav-main{
+    display: flex;
+    justify-content:center;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-bar{
+    display:flex;
+    justify-content:center;
+    width:85%;
+}
+.nav-option{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    width: 85%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.option{
+    font-weight: 500;
+    font-size: 20px;
+}
+.btnText{
+    color:white;
+    background-color: #206dc2;
+    border-radius: 40px;
+    padding:10px;
+    
+}
+.doctor-img{
+    margin-top:20px;
+    background: url(assets/about.jpg);
+    height:65vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    
+}
+.main-section{
+    position: relative;
+}
+.main-section-content1{
+    position: relative;
+}
+.welcome-intro{
+    position:absolute;
+    top:35%;
+    left:100px;
+}
+.welcome-text1{
+    font-weight: 800;
+    color:#2b4258;
+    font-size: 60px;
+}
+.welcome-text2{
+    font-weight:600;
+    font-size: 60px;
+    color:#2b4258
+}
+.btnGetStarted{
+    color:white;
+    background-color: #206dc2;
+    border-radius: 40px;
+    padding:20px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    width:250px;
+    text-align: center;
+    height: 60px;
+}
+
+.boxes{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    transform: translate(10%, -50%);
+}
+.box0{
+    padding:20;
+    background-color:#206dc2 ;
+    height:30rem;
+    width:500px;
+    padding: 40px;
+    border-radius: 23px;
+}
+.box-title, .boxDesc, .btnLearn-content{
+    color:white;
+}
+.box0 .box-title{
+    font-weight: 900;
+    font-size: 40px;
+}
+.box1{
+    padding:20;
+    background-color:whitesmoke ;
+    height:400px;
+    width:400px;
+    padding: 40px;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box1 .boxDesc {
+    color:black;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+.btnLearn{
+    display: flex;
+    justify-content: center;
+}
+.btnLearn-content{
+    font-size: 35px;
+    background-color: #4d89cb;
+    padding:15px;
+    border-radius: 40px;;
+    text-align: center;
+    margin-top: 50px;
+    display: inline-block;
+}
+.arrow{
+    font-size: 30px;
+    align-self: center;
+}
+.box1 .box-title{
+    color:black;
+    display: flex;
+    flex-wrap:wrap;
+    font-weight: 900;
+    font-size: 30px;
+}
+.note-img{
+    height:60px;
+    margin:30px;
+}
+.box-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.second-section-first-content{
+    background: url(assets/hero-bg.jpg);
+    background-size: cover;
+    width:50vw;
+    height: 70vh;
+    background-position: center;
+}
+.second-section-second-content{
+    
+}
+@media(max-width:1000px){
+
+    .header-contact-content1{
+        flex-direction:column;
+    }
+    .contact-img1 , .contact-img2{
+        width:25px;
+    }
+    .twitter{
+        width: 25px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .doctor-img{
+        height: 50vh;
+        width: 100vw;
+    }
+    .welcome-text1{
+        font-size: 30px;
+    }
+    .welcome-text2{
+        font-size: 30px;
+    }
+    .btnGetStarted{
+        width:auto;
+        height:auto;
+    }
+    .welcome-intro{
+        left:40px;
+        top:0;
+    }
+    .box0{
+        height:150px;
+        width:auto;
+        align-items: center;
+    }
+    .box1{
+        height:150px;
+        width:auto;
+        align-items: center;
+    }
+    .boxDesc{
+        display: none;
+    }
+    .btnLearn{
+        display: none;
+    }
+    .box1 .boxDesc{
+        display: none;
+    }
+    .box0 .box-title, .box1 .box-title{
+        font-size: 100%;
+    }
+    .main-section-content2{
+        transform: translate(10%, 50%);
+
+    }
+    .boxes{
+        flex-wrap: wrap;
+        left:30;
+    }
+}
